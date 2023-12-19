@@ -19,7 +19,7 @@ for row_coord, row in enumerate(grid):
                 if cur_row < 0 or cur_row >= len(grid) or cur_col < 0 or cur_col >= len(grid) or not grid[cur_row][cur_col].isdigit():
                     continue
                 # when column is not out of bounds and the character to the left is a digit, decrease the column
-                while cur_col > 0 and grid[cur_row][cc - 1].isdigit():
+                while cur_col > 0 and grid[cur_row][cur_col - 1].isdigit():
                     cur_col -= 1
                 coord_set.add((cur_row, cur_col))
 
