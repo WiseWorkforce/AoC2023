@@ -1,4 +1,3 @@
-import csv
 file_to_open = r'Day 3\Part 1\input.txt'
 grid = open(file_to_open).read().splitlines()
 coord_set =set()
