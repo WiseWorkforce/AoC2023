@@ -11,10 +11,8 @@ for row in grid:
     have_str = rest_of_card.split('|')[1].strip().split(' ')
     have_str = [x for x in have_str if x != '']
     multiplier = 0
-    counter = 0
     for i in have_str:
         if i in winning_str:
-            counter += 1
             if multiplier == 0 :
                 multiplier = 1
             else:
