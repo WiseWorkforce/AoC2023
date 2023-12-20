@@ -1,7 +1,5 @@
 import pandas as pd
-from datetime import datetime
 
-start_time = datetime.now()
 file_to_open = r'Day 5\Part 1\input.txt'
 grid = open(file_to_open).read().splitlines()
 
@@ -19,7 +17,6 @@ for row in grid:
     else:
         dest, src, rng = row.split(' ' )
         from_to_dict[f,t].append({'src' : int(src), 'dest' : int(dest), 'rng' : int(rng)})
-#print('Refactoring input to Dicts ready! --- ' + str(datetime.now() - start_time))
         
 seed_loc_dict = {}
 for seed in seeds_to_collect:
