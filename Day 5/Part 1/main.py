@@ -1,5 +1,3 @@
-import pandas as pd
-
 file_to_open = r'Day 5\Part 1\input.txt'
 grid = open(file_to_open).read().splitlines()
 
