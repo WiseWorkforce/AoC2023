@@ -1,4 +1,4 @@
-file_to_open = r'Day 13\Input\input.txt'
+file_to_open = r'Day 13\Input\test.txt'
 grid = open(file_to_open).read()
 
 
